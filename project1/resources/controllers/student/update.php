@@ -2,6 +2,8 @@
 // Connect to the database.
 require($_SERVER['DOCUMENT_ROOT'].'/project1/config/database.php');
 
+$STUDENT_ID = mysqli_real_escape_string($DB_CONNECTION, trim($_POST['student-id']));
+
 // Begin to retrieve post values from student form - PERSONAL DETAILS.
 $FIRST_NAME = mysqli_real_escape_string($DB_CONNECTION, trim(strtoupper($_POST['first-name'])));
 $LAST_NAME = mysqli_real_escape_string($DB_CONNECTION, trim(strtoupper($_POST['last-name'])));
@@ -20,24 +22,14 @@ $NOK_MOBILE = mysqli_real_escape_string($DB_CONNECTION, trim($_POST['nok_mobile'
 $NOK_EMAIL = mysqli_real_escape_string($DB_CONNECTION, trim($_POST['nok_email']));
 $NOK_REL = mysqli_real_escape_string($DB_CONNECTION, trim(strtoupper($_POST['nok_rel'])));
 
-// Begin Database and Server request.
-$QUERY = "INSERT INTO 
-`students`(`id`, `first_name`, `last_name`, `dob`, `program_level`, `phone`, `email`, `postal`, `address`, `created_at`, `updated_at`) 
-VALUES ('','$FIRST_NAME','$LAST_NAME','$DOB','$PROGRAM_LEVEL','$MOBILE','$EMAIL','$POSTAL','$ADDRESS',NOW(),NOW())";
-$STUDENT_REGISTER = mysqli_query($DB_CONNECTION, $QUERY) or die('Failed to register student. Please try again or contact administrator.');
-// End of database and server request.
+$QUERY = "UPDATE `students` 
+SET `first_name`='$FIRST_NAME',`last_name`='$LAST_NAME',`dob`='$DOB',`gender`='$GENDER',`program_level`='$PROGRAM_LEVEL',`phone`='$MOBILE',`email`='$EMAIL',`postal`='$POSTAL',`address`='$ADDRESS',`updated_at`= NOW() WHERE `student_id` = '$STUDENT_ID'";
 
-// Begin Database and Server request.
-$QUERY = "INSERT INTO `next_of_kins`(`id`, `student_id`, `first_name`, `last_name`, `phone`, `email`, `relationship`, `created_at`, `updated_at`) 
-VALUES ('','','$NOK_FNAME','$NOK_LNAME','$NOK_MOBILE','$NOK_EMAIL','$NOK_REL',NOW(),NOW())";
-$NOK_REGISTER = mysqli_query($DB_CONNECTION, $QUERY) or die('Failed to register student. Please try again or contact administrator.');
-// End of database and server request.
+$UPDATE = mysqli_query($DB_CONNECTION, $QUERY) or die('ERROR: '.mysqli_error($DB_CONNECTION));
 
-// Conditional response.
-if ($STUDENT_REGISTER && $NOK_REGISTER) {
+if ($UPDATE) {
 	echo true;
 }
 
-// CLose server and database connection.
-mysqli_close($DB_CONNECTION);
+mysqli_error($DB_CONNECTION);
 ?>

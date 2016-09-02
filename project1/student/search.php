@@ -101,5 +101,8 @@ function custom_footer_container(){?>
           }
          });
       }
+      function edit_student(id) {
+        window.location.href = 'edit?id=' + id;
+      }
   </script>
 <?php } // End of custom footer container. ?>
