@@ -20,16 +20,17 @@ $NOK_MOBILE = mysqli_real_escape_string($DB_CONNECTION, trim($_POST['nok_mobile'
 $NOK_EMAIL = mysqli_real_escape_string($DB_CONNECTION, trim($_POST['nok_email']));
 $NOK_REL = mysqli_real_escape_string($DB_CONNECTION, trim(strtoupper($_POST['nok_rel'])));
 
+$STUDENT_ID = rand(10,100);
 // Begin Database and Server request.
 $QUERY = "INSERT INTO 
 `students`(`id`, `first_name`, `last_name`, `dob`, `program_level`, `phone`, `email`, `postal`, `address`, `created_at`, `updated_at`) 
-VALUES ('','$FIRST_NAME','$LAST_NAME','$DOB','$PROGRAM_LEVEL','$MOBILE','$EMAIL','$POSTAL','$ADDRESS',NOW(),NOW())";
+VALUES ('$STUDENT_ID','$FIRST_NAME','$LAST_NAME','$DOB','$PROGRAM_LEVEL','$MOBILE','$EMAIL','$POSTAL','$ADDRESS',NOW(),NOW())";
 $STUDENT_REGISTER = mysqli_query($DB_CONNECTION, $QUERY) or die('Failed to register student. Please try again or contact administrator.');
 // End of database and server request.
 
 // Begin Database and Server request.
 $QUERY = "INSERT INTO `next_of_kins`(`id`, `student_id`, `first_name`, `last_name`, `phone`, `email`, `relationship`, `created_at`, `updated_at`) 
-VALUES ('','','$NOK_FNAME','$NOK_LNAME','$NOK_MOBILE','$NOK_EMAIL','$NOK_REL',NOW(),NOW())";
+VALUES ('','$STUDENT_ID','$NOK_FNAME','$NOK_LNAME','$NOK_MOBILE','$NOK_EMAIL','$NOK_REL',NOW(),NOW())";
 $NOK_REGISTER = mysqli_query($DB_CONNECTION, $QUERY) or die('Failed to register student. Please try again or contact administrator.');
 // End of database and server request.
 
