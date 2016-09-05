@@ -96,18 +96,85 @@
       <!--sidebar end-->
       <!--main content start-->
       <section id="main-content">
-        <section class="wrapper site-min-height">
-          <h3>
-            <i class="fa fa-angle-right">
-            </i> List of all GTUC Staff Members
-          </h3>
-          <div class="row mt">
-            <div class="col-lg-12">
-              <p>Place your content here.
-              </p>
-            </div>
-          </div>
-        </section>
+          <section class="wrapper">
+          	<h3><i class="fa fa-angle-right"></i> LIST OF ALL GTUC STAFF </h3>
+				<div class="row">
+				
+	                  <div class="col-md-12">
+	                  	  
+	                  	  	  
+	                  	  	  <hr>
+		                      <table class="table">
+		                          <thead>
+		                          <tr>
+		                              <th>#</th>
+		                              <th>First Name</th>
+		                              <th>Last Name</th>
+		                              <th>ID</th>
+		                          </tr>
+		                          </thead>
+		                          <tbody>
+		                          <tr>
+		                              <td>1</td>
+		                              <td>Jason</td>
+		                              <td>Obeng</td>
+		                              <td>00171</td>
+		                          </tr>
+		                          <tr>
+		                              <td>2</td>
+		                              <td>Jacob</td>
+		                              <td>Akrofi</td>
+		                              <td>00272</td>
+		                          </tr>
+		                          <tr>
+		                              <td>3</td>
+		                              <td>Earl</td>
+		                              <td>Bempong</td>
+		                              <td>00373</td>
+		                          </tr>
+								   <tr>
+		                              <td>4</td>
+		                              <td>Roderick</td>
+		                              <td>Agyekum</td>
+		                              <td>00474</td>
+		                          </tr>
+								  <tr>
+		                              <td>5</td>
+		                              <td>Jeffrey</td>
+		                              <td>Acquah</td>
+		                              <td>00575</td>
+		                          </tr>
+								   <tr>
+		                              <td>6</td>
+		                              <td>Chris</td>
+		                              <td>Stevens</td>
+		                              <td>00676</td>
+		                          </tr>
+								   <tr>
+		                              <td>7</td>
+		                              <td>Kevin</td>
+		                              <td>Awuye</td>
+		                              <td>00777</td>
+		                          </tr>
+								  <tr>
+		                              <td>8</td>
+		                              <td>Jessica</td>
+		                              <td>Owusu</td>
+		                              <td>00878</td>
+		                          </tr>
+								  <tr>
+		                              <td>9</td>
+		                              <td>Barbara</td>
+		                              <td>Achempong</td>
+		                              <td>00979</td>
+		                          </tr>
+		                          </tbody>
+		                      </table>
+	                  	  </div><! --/content-panel -->
+	                  </div><!-- /col-md-12 -->
+                  
+	                  
+		</section><! --/wrapper -->
       </section>
       <!-- /MAIN CONTENT -->
       <!--main content end-->
