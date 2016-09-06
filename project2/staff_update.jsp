@@ -96,19 +96,59 @@
       <!--sidebar end-->
       <!--main content start-->
       <section id="main-content">
-        <section class="wrapper site-min-height">
-          <h3>
-            <i class="fa fa-angle-right">
-            </i> Updating - Nana Kwadwo Adjei Manu #05073627
-          </h3>
-          <div class="row mt">
-            <div class="col-lg-12">
-              <p>Place your content here.
-              </p>
-            </div>
-          </div>
-        </section>
-      </section>
+          <section class="wrapper">
+          	<h3><i class="fa fa-angle-right"></i> PLEASE UPDATE YOUR DETAILS</h3>
+          	
+          	<!-- BASIC FORM ELELEMNTS -->
+          	<div class="row mt">
+          		<div class="col-lg-12">
+                  <div class="form-panel">
+                  	  
+                      <form class="form-horizontal style-form" method="get">
+						<div class="form-group">
+                          <input class="form-control" value="Earl Bempong" name="fname" type="text">
+						  </div>
+						  <div class="form-group">
+                              <label class="col-sm-2 col-sm-2 control-label">STAFF ID</label>
+                              <div class="col-sm-10">
+                                  <input type="text" class="form-control">
+                              </div>
+                          </div>
+						  <div class="form-group">
+                              <label class="col-sm-2 col-sm-2 control-label">Job Title</label>
+                              <div class="col-sm-10">
+                                  <input type="text" class="form-control">
+                              </div>
+                          </div>
+                          <div class="form-group">
+                              <label class="col-sm-2 col-sm-2 control-label">Old Password</label>
+                              <div class="col-sm-10">
+                                  <input type="password"  class="form-control" placeholder="">
+                              </div>
+                          </div>
+						  <div class="form-group">
+                              <label class="col-sm-2 col-sm-2 control-label">New Password</label>
+                              <div class="col-sm-10">
+                                  <input type="password"  class="form-control" placeholder="">
+                              </div>
+                          </div>
+						  <div class="form-group">
+                              <label class="col-sm-2 col-sm-2 control-label">Email</label>
+                              <div class="col-sm-10">
+                                  <input type="text" class="form-control">
+                              </div>
+                          </div>
+                          <div class="form-group">
+                              <label class="col-lg-2 col-sm-2 control-label"></label>
+                              <div class="col-lg-10">
+                                  <p class="form-control-static">email@example.com</p>
+                              </div>
+                          </div>
+						  <button type="submit" class="btn btn-theme">Update</button>
+                      </form>
+                  </div>
+          		</div><!-- col-lg-12-->      	
+          	</div><!-- /row -->
       <!-- /MAIN CONTENT -->
       <!--main content end-->
       <!--footer start-->
