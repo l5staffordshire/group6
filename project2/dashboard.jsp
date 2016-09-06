@@ -15,6 +15,7 @@
     <!-- Custom styles for this template -->
     <link href="assets/css/style.css" rel="stylesheet">
     <link href="assets/css/style-responsive.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/lineicons/style.css">  
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
   </head>
   <body>
@@ -101,12 +102,121 @@
             <i class="fa fa-angle-right">
             </i> Dashboard & Statistics
           </h3>
-          <div class="row mt">
+          <div class="row">
             <div class="col-lg-12">
-              <p>Place your content here.
-              </p>
+              <div class="row">
+                <div class="col-lg-12 main-chart">
+                  <div class="row">
+                    <div class="col-md-2">
+                      <div class="box1">
+                        <span class="li_user">
+                        </span>
+                        <h3>Total: <br>9
+                        </h3>
+                      </div>
+                      <p>There are total 9 members of the GTUC Staff in the database!
+                      </p>
+                    </div>
+                    <div class="col-md-2">
+                      <div class="box1">
+                        <span class="li_user">
+                        </span>
+                        <h3>Males: <br>5
+                        </h3>
+                      </div>
+                      <p>There are total 5 male members of the GTUC Staff in the database!
+                      </p>
+                    </div>
+                    <div class="col-md-2">
+                      <div class="box1">
+                        <span class="li_user">
+                        </span>
+                        <h3>Females: <br>4
+                        </h3>
+                      </div>
+                      <p>There are total 4 female members of the GTUC Staff in the database!
+                      </p>
+                    </div>
+                    <div class="col-md-2">
+                      <div class="box1">
+                        <span class="li_news">
+                        </span>
+                        <h3>Teachers: <br>4
+                        </h3>
+                      </div>
+                      <p>There are total 4 teachers of the GTUC Staff in the database!
+                      </p>
+                    </div>
+                    <div class="col-md-2">
+                      <div class="box1">
+                        <span class="li_diamond ">
+                        </span>
+                        <h3>Management: <br>2
+                        </h3>
+                      </div>
+                      <p>There are total 2 managers of the GTUC Staff in the database!
+                      </p>
+                    </div>
+                    <div class="col-md-2">
+                      <div class="box1">
+                        <span class="li_trash">
+                        </span>
+                        <h3>Cleaners: <br>4
+                        </h3>
+                      </div>
+                      <p>There are total 4 cleaners of the GTUC Staff in the database!
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
+          <div class="row">
+                      <!--CUSTOM CHART START -->
+                      <div class="border-head">
+                          <h3>TOTAL WORK HOURS LOGGED</h3>
+                      </div>
+                      <div class="custom-bar-chart">
+                          <ul class="y-axis">
+                              <li><span>10.000</span></li>
+                              <li><span>8.000</span></li>
+                              <li><span>6.000</span></li>
+                              <li><span>4.000</span></li>
+                              <li><span>2.000</span></li>
+                              <li><span>0</span></li>
+                          </ul>
+                          <div class="bar">
+                              <div class="title">JAN</div>
+                              <div class="value tooltips" data-original-title="8.500" data-toggle="tooltip" data-placement="top">85%</div>
+                          </div>
+                          <div class="bar ">
+                              <div class="title">FEB</div>
+                              <div class="value tooltips" data-original-title="5.000" data-toggle="tooltip" data-placement="top">50%</div>
+                          </div>
+                          <div class="bar ">
+                              <div class="title">MAR</div>
+                              <div class="value tooltips" data-original-title="6.000" data-toggle="tooltip" data-placement="top">60%</div>
+                          </div>
+                          <div class="bar ">
+                              <div class="title">APR</div>
+                              <div class="value tooltips" data-original-title="4.500" data-toggle="tooltip" data-placement="top">45%</div>
+                          </div>
+                          <div class="bar">
+                              <div class="title">MAY</div>
+                              <div class="value tooltips" data-original-title="3.200" data-toggle="tooltip" data-placement="top">32%</div>
+                          </div>
+                          <div class="bar ">
+                              <div class="title">JUN</div>
+                              <div class="value tooltips" data-original-title="6.200" data-toggle="tooltip" data-placement="top">62%</div>
+                          </div>
+                          <div class="bar">
+                              <div class="title">JUL</div>
+                              <div class="value tooltips" data-original-title="7.500" data-toggle="tooltip" data-placement="top">75%</div>
+                          </div>
+                      </div>
+                      <!--custom chart end-->
+          </div><!-- /row -->
         </section>
       </section>
       <!-- /MAIN CONTENT -->

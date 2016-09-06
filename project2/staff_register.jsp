@@ -96,62 +96,19 @@
       <!--sidebar end-->
       <!--main content start-->
       <section id="main-content">
-          <section class="wrapper">
-          	<h3><i class="fa fa-angle-right"></i> STAFF REGISTRATION</h3>
-          	
-          	<!-- BASIC FORM ELELEMNTS -->
-          	<div class="row mt">
-          		<div class="col-lg-12">
-                  <div class="form-panel">
-                  	  
-                      <form class="form-horizontal style-form" method="get">
-                          <div class="form-group">
-                              <label class="col-sm-2 col-sm-2 control-label">First Name</label>
-                              <div class="col-sm-10">
-                                  <input type="text" class="form-control">
-                              </div>
-                          </div>
-                          <div class="form-group">
-                              <label class="col-sm-2 col-sm-2 control-label">Last Name</label>
-                              <div class="col-sm-10">
-                                  <input type="text" class="form-control">
-                              </div>
-                          </div>
-						  <div class="form-group">
-                              <label class="col-sm-2 col-sm-2 control-label">STAFF ID</label>
-                              <div class="col-sm-10">
-                                  <input type="text" class="form-control">
-                              </div>
-                          </div>
-						  <div class="form-group">
-                              <label class="col-lg-2 col-sm-2 control-label"></label>
-                              <div class="col-lg-10">
-                                  <p class="form-control-static">PLEASE CHECK ACCEPTANCE LETTER FOR ID</p>
-                              </div>
-                          </div>
-                          <div class="form-group">
-                              <label class="col-sm-2 col-sm-2 control-label">Password</label>
-                              <div class="col-sm-10">
-                                  <input type="password"  class="form-control" placeholder="">
-                              </div>
-                          </div>
-						  <div class="form-group">
-                              <label class="col-sm-2 col-sm-2 control-label">Email</label>
-                              <div class="col-sm-10">
-                                  <input type="text" class="form-control">
-                              </div>
-                          </div>
-                          <div class="form-group">
-                              <label class="col-lg-2 col-sm-2 control-label"></label>
-                              <div class="col-lg-10">
-                                  <p class="form-control-static">email@example.com</p>
-                              </div>
-                          </div>
-						  <button type="submit" class="btn btn-theme">Sign Up</button>
-                      </form>
-                  </div>
-          		</div><!-- col-lg-12-->      	
-          	</div><!-- /row -->
+        <section class="wrapper site-min-height">
+          <h3>
+            <i class="fa fa-angle-right">
+            </i> Registration form for New GTUC Staff Member
+          </h3>
+          <div class="row mt">
+            <div class="col-lg-12">
+              <p>Place your content here.
+              </p>
+            </div>
+          </div>
+        </section>
+      </section>
       <!-- /MAIN CONTENT -->
       <!--main content end-->
       <!--footer start-->
