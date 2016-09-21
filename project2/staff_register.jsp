@@ -34,7 +34,7 @@
         <div class="top-menu">
           <ul class="nav pull-right top-menu">
             <li>
-              <a  href="index.jsp" class="logout">Logout
+              <a  href="logout.jsp" class="logout">Logout
               </a>
             </li>
           </ul>
@@ -51,7 +51,7 @@
                 <img src="assets/img/ui-sam.jpg" class="img-circle" width="60">
               </a>
             </p>
-            <h5 class="centered">G6 Administrator
+            <h5 class="centered"><%= session.getAttribute( "username" ) %>
             </h5>
             <li class="mt">
               <a href="dashboard.jsp">
@@ -96,21 +96,134 @@
       <!--sidebar end-->
       <!--main content start-->
       <section id="main-content">
-        <section class="wrapper site-min-height">
+        <section class="wrapper">
           <h3>
             <i class="fa fa-angle-right">
-            </i> Registration form for New GTUC Staff Member
+            </i> STAFF REGISTRATION
           </h3>
+          <!-- BASIC FORM ELELEMNTS -->
           <div class="row mt">
             <div class="col-lg-12">
-              <p>Place your content here.
-              </p>
+              <div class="form-panel">
+                <form class="form-horizontal style-form" method="post" action="staff_show.jsp">
+                  <div class="form-group">
+                    <label class="col-sm-2 col-sm-2 control-label">First Name
+                    </label>
+                    <div class="col-sm-10">
+                      <input type="date" class="form-control" name="first_name">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 col-sm-2 control-label">Middle Name
+                    </label>
+                    <div class="col-sm-10">
+                      <input type="date" class="form-control" name="middle_name">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 col-sm-2 control-label">Last Name
+                    </label>
+                    <div class="col-sm-10">
+                      <input type="date" class="form-control" name="last_name">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 col-sm-2 control-label">Date of Birth
+                    </label>
+                    <div class="col-sm-10">
+                      <input type="date" class="form-control" placeholder="00/00/00" name="dob">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 col-sm-2 control-label">Gender
+                    </label>
+                    <div class="col-sm-10">
+                      <select class="form-control" name="gender">
+                        <option>Male
+                        </option>
+                        <option>Female
+                        </option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 col-sm-2 control-label">Email
+                    </label>
+                    <div class="col-sm-10">
+                      <input type="text" class="form-control" name="email">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 col-sm-2 control-label">Department / If Applicable
+                    </label>
+                    <div class="col-sm-10">
+                      <select class="form-control" name="department">
+                        <option>Department of IT
+                        </option>
+                        <option>Department of Communications
+                        </option>
+                        <option>Department of Enginnering
+                        </option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 col-sm-2 control-label">Role
+                    </label>
+                    <div class="col-sm-10">
+                      <input type="text" class="form-control" name="role">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 col-sm-2 control-label">Postal Address
+                    </label>
+                    <div class="col-sm-10">
+                      <textarea class="form-control" name="postal">
+                      </textarea>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 col-sm-2 control-label">Residential Address
+                    </label>
+                    <div class="col-sm-10">
+                      <textarea class="form-control" name="residential">
+                      </textarea>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 col-sm-2 control-label">Primary Telephone
+                    </label>
+                    <div class="col-sm-10">
+                      <input type="text" class="form-control" name="phone1">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 col-sm-2 control-label">Secondary Telephone / If Applicable
+                    </label>
+                    <div class="col-sm-10">
+                      <input type="text" class="form-control" name="phone2">
+                    </div>
+                  </div>
+                  <!-- <div class="form-group">
+                    <label class="col-sm-2 col-sm-2 control-label">Passport Size Photo
+                    </label>
+                    <div class="col-sm-10">
+                      <input type="file" class="form-control">
+                    </div>
+                  </div> -->
+                  <button type="submit" class="btn btn-theme">Register
+                  </button>
+                  <button type="reset" class="btn btn-error">Reset
+                  </button>
+                </form>
+              </div>
             </div>
           </div>
-        </section>
-      </section>
+        <!-- col-lg-12-->       
+      <!-- /row -->
       <!-- /MAIN CONTENT -->
       <!--main content end-->
+          </section>
       <!--footer start-->
       <footer class="site-footer">
         <div class="text-center">
@@ -118,6 +231,7 @@
         </div>
       </footer>
       <!--footer end-->
+
     </section>
     <!-- js placed at the end of the document so the pages load faster -->
     <script src="assets/js/jquery.js">

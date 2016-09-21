@@ -1,3 +1,10 @@
+<%
+    // Get user input from POST Cache
+    String username = request.getParameter("username");
+    
+    // Set username from POST cache in session cache.
+    session.setAttribute("username",username);
+%>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -35,7 +42,7 @@
         <div class="top-menu">
           <ul class="nav pull-right top-menu">
             <li>
-              <a  href="index.jsp" class="logout">Logout
+              <a  href="logout.jsp" class="logout">Logout
               </a>
             </li>
           </ul>
@@ -52,7 +59,7 @@
                 <img src="assets/img/ui-sam.jpg" class="img-circle" width="60">
               </a>
             </p>
-            <h5 class="centered">G6 Administrator
+            <h5 class="centered"><%= session.getAttribute( "username" ) %>
             </h5>
             <li class="mt">
               <a href="dashboard.jsp" class="active">

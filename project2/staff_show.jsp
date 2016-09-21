@@ -6,7 +6,7 @@
     <meta name="description" content="Human Resource - Project 2">
     <meta name="author" content="Aaron Segbedzi, Kojo Mensah, Nana Kwadzo Adjei-Manu">
     <meta name="keyword" content="Human Resource, GTUC, Project 2">
-    <title>Update Staff | HR
+    <title>Staff List | HR
     </title>
     <!-- Bootstrap core CSS -->
     <link href="assets/css/bootstrap.css" rel="stylesheet">
@@ -75,13 +75,13 @@
                     </i> Staff List
                   </a>
                 </li>
-                <li>
+                <li  class="active">
                   <a  href="staff_register.jsp">
                     <i class="fa fa-pencil">
                     </i> Register
                   </a>
                 </li>
-                <li class="active">
+                <li>
                   <a  href="staff_update.jsp">
                     <i class="fa fa-edit">
                     </i> Update
@@ -96,136 +96,113 @@
       <!--sidebar end-->
       <!--main content start-->
       <section id="main-content">
-        <section class="wrapper site-min-height">
+        <section class="wrapper">
           <h3>
             <i class="fa fa-angle-right">
-            </i> Updating - Nana Kwadwo Adjei Manu #05073627
+            </i> CONFIRMATION OF FORM DETAILS
           </h3>
+          <!-- BASIC FORM ELELEMNTS -->
           <div class="row mt">
             <div class="col-lg-12">
-              <div class="row mt">
-            <div class="col-lg-12">
               <div class="form-panel">
-                <form class="form-horizontal style-form" method="get">
+              <form class="form-horizontal style-form" method="post" action="staff_show.jsp">
                   <div class="form-group">
                     <label class="col-sm-2 col-sm-2 control-label">First Name
                     </label>
                     <div class="col-sm-10">
-                      <input type="text" class="form-control" value="Nana">
+                      <p><%= request.getParameter("first_name") %></p>
                     </div>
                   </div>
                   <div class="form-group">
                     <label class="col-sm-2 col-sm-2 control-label">Middle Name
                     </label>
                     <div class="col-sm-10">
-                      <input type="text" class="form-control" value="Kwadwo">
+                      <p><%= request.getParameter("middle_name") %></p>
                     </div>
                   </div>
                   <div class="form-group">
                     <label class="col-sm-2 col-sm-2 control-label">Last Name
                     </label>
                     <div class="col-sm-10">
-                      <input type="text" class="form-control" value="Adjei-Manu">
+                      <p><%= request.getParameter("last_name") %></p>
                     </div>
                   </div>
                   <div class="form-group">
                     <label class="col-sm-2 col-sm-2 control-label">Date of Birth
                     </label>
                     <div class="col-sm-10">
-                      <input type="date" class="form-control" value="12/12/12">
+                      <p><%= request.getParameter("dob") %></p>
                     </div>
                   </div>
                   <div class="form-group">
                     <label class="col-sm-2 col-sm-2 control-label">Gender
                     </label>
                     <div class="col-sm-10">
-                      <select class="form-control">
-                        <option>Male
-                        </option>
-                        <option>Female
-                        </option>
-                      </select>
+                      <p><%= request.getParameter("gender") %></p>
                     </div>
                   </div>
                   <div class="form-group">
                     <label class="col-sm-2 col-sm-2 control-label">Email
                     </label>
                     <div class="col-sm-10">
-                      <input type="text" class="form-control" value="nana@gtuc.com.gh">
+                      <p><%= request.getParameter("email") %></p>
                     </div>
                   </div>
                   <div class="form-group">
                     <label class="col-sm-2 col-sm-2 control-label">Department / If Applicable
                     </label>
                     <div class="col-sm-10">
-                      <select class="form-control">
-                        <option>Department of IT
-                        </option>
-                        <option>Department of Communications
-                        </option>
-                        <option>Department of Enginnering
-                        </option>
-                      </select>
+                      <p><%= request.getParameter("department") %></p>
                     </div>
                   </div>
                   <div class="form-group">
                     <label class="col-sm-2 col-sm-2 control-label">Role
                     </label>
                     <div class="col-sm-10">
-                      <input type="text" class="form-control" value="Manager of IT">
+                      <p><%= request.getParameter("role") %></p>
                     </div>
                   </div>
                   <div class="form-group">
                     <label class="col-sm-2 col-sm-2 control-label">Postal Address
                     </label>
                     <div class="col-sm-10">
-                      <textarea class="form-control">P.O. BOX 61 SOLA POST GPO PMB
-                      </textarea>
+                      <p><%= request.getParameter("postal") %></p>
                     </div>
                   </div>
                   <div class="form-group">
                     <label class="col-sm-2 col-sm-2 control-label">Residential Address
                     </label>
                     <div class="col-sm-10">
-                      <textarea class="form-control">EAST LEGON, HSE NO L1
-                      </textarea>
+                      <p><%= request.getParameter("residential") %></p>
                     </div>
                   </div>
                   <div class="form-group">
                     <label class="col-sm-2 col-sm-2 control-label">Primary Telephone
                     </label>
                     <div class="col-sm-10">
-                      <input type="text" class="form-control" value="+233542458155">
+                      <p><%= request.getParameter("phone1") %></p>
                     </div>
                   </div>
                   <div class="form-group">
                     <label class="col-sm-2 col-sm-2 control-label">Secondary Telephone / If Applicable
                     </label>
                     <div class="col-sm-10">
-                      <input type="text" class="form-control" value="+2541651561">
+                      <p><%= request.getParameter("phone2") %></p>
                     </div>
                   </div>
-                  <div class="form-group">
-                    <label class="col-sm-2 col-sm-2 control-label">Passport Size Photo
-                    </label>
-                    <div class="col-sm-10">
-                      <input type="file" class="form-control">
-                    </div>
-                  </div>
-                  <button type="submit" class="btn btn-theme">Register
+                  <button type="submit" class="btn btn-theme">Save
                   </button>
-                  <button type="reset" class="btn btn-error">Reset
-                  </button>
-                </form>
+                  <a href="staff_register.jsp" class="btn btn-error">Back
+                  </a>
+                  </form>
               </div>
             </div>
           </div>
-            </div>
-          </div>
-        </section>
-      </section>
+        <!-- col-lg-12-->       
+      <!-- /row -->
       <!-- /MAIN CONTENT -->
       <!--main content end-->
+          </section>
       <!--footer start-->
       <footer class="site-footer">
         <div class="text-center">
@@ -233,6 +210,7 @@
         </div>
       </footer>
       <!--footer end-->
+
     </section>
     <!-- js placed at the end of the document so the pages load faster -->
     <script src="assets/js/jquery.js">

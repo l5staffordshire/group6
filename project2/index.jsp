@@ -18,12 +18,12 @@
   <body>
 	  <div id="login-page">
 	  	<div class="container">
-		      <form class="form-login" action="dashboard.jsp">
+		      <form class="form-login" method="post" action="dashboard.jsp">
 		        <h2 class="form-login-heading">sign in now</h2>
 		        <div class="login-wrap">
-		            <input type="text" class="form-control" value="admin" name="username" autofocus>
+		            <input type="text" class="form-control" name="username" placeholder="Type your full name here...." autofocus>
 		            <br>
-		            <input type="password" class="form-control" value="admin" placeholder="Password">
+		            <input type="password" class="form-control" name="password" value="12345678">
 		            <label class="checkbox">
 		                <span class="pull-right">
 		                    <a data-toggle="modal" href="login.html#myModal"> Forgot Password?</a>	
